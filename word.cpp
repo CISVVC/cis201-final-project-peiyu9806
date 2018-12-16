@@ -1,4 +1,5 @@
 #include "word.h"
+#include<iostream>
 
 Word::Word(std::string word)
 {
@@ -23,7 +24,7 @@ std::string Word::get_word() const
 
 void Word::print() const
 {
-    std::cout << m_count << ":";
+    std::cout << ":" << m_count << ":";
     for(int i=0;i<m_line.size();i++)
     {
         std::cout << m_line[i] << "," << std::endl;
